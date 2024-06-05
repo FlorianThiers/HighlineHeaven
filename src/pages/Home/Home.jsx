@@ -24,7 +24,7 @@ const Home = () => {
             de ratel ook plaatshouders, afstandhouders genoemd, zodat de lijn
             toch stevig en veilig kan worden opgespannen.
           </p>
-          <Link to={`${ROUTES.detail.to}${"e6p8litbkkt6mxa"}`}>
+          <Link to={`${ROUTES.detail.to}${"qfoolvbweklfzzt"}`}>
             <button>See more</button>
           </Link>
         </div>
@@ -42,7 +42,7 @@ const Home = () => {
             cm. Hierdoor kunt u de lengte snel aanpassen aan de betreffende
             leeftijdsgroep.
           </p>
-          <Link to={`${ROUTES.detail.to}${"psscztb2ur00vmb"}`}>
+          <Link to={`${ROUTES.detail.to}${"u8jt53s6cjo7h55"}`}>
             <button>See more</button>
           </Link>
         </div>
@@ -57,7 +57,7 @@ const Home = () => {
             met de klittenbandsluitingen. Lussen op de boombeschermer voorkomen
             dat de lijn naar beneden glijdt.
           </p>
-          <Link to={`${ROUTES.detail.to}${"co0fac67z0yqnfy"}`}>
+          <Link to={`${ROUTES.detail.to}${"clzrrt9u40vydl7"}`}>
             <button>See more</button>
           </Link>
         </div>
