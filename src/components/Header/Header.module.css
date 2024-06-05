@@ -138,6 +138,71 @@
 
 @media only screen and (max-width: 500px) {
 
+        /* Add styles top row */
+        .rowTop {
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 0rem; /* Add margin */
+            margin-right: 0rem; /* Add margin */
+            padding: 0rem;
+    
+        }
+    
+        .rowTop button {
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            margin: 0;
+            width: 6rem;
+            height: 2rem;
+            padding-top: -0.2rem; /* Verhoog de bovenste padding */
+            padding-bottom: 0.4rem; /* Verlaag de onderste padding */
+            /* Add other button styles as needed */
+        }
+    
+        /* Add styles low row */
+        .rowLow {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .row {
+            flex-direction: column;
+            align-items: center;
+    
+        }
+    
+        .logo {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .header__logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #6B8E23;
+            margin: 0px;
+            text-shadow: 0 0 1px rgba(107, 142, 35, 0.5), 0 0 2px rgba(107, 142, 35, 0.5), 0 0 3px rgba(107, 142, 35, 0.5), 0 0 40px #6B8E23;
+          }
+    
+        .header__logo:hover {
+            animation: beat 2s infinite;
+            text-shadow: 0 0 1px #5d65fe , 0 0 2px #5d65fe , 0 0 3px #5d65fe , 0 0 4px #5d65fe ;
+          }
+    
+        
+        /* Add styles bottum row */
+        .bottumRow {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        
+        .rowBottum {
+            display: flex;
+            }
+    
+
     .icons {
         width: 50%;
     }
