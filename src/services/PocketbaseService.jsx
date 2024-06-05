@@ -1,5 +1,8 @@
 import PocketBase from 'pocketbase';
 
-const pb = new PocketBase(process.env.REACT_APP_PBURL);
+const url = 'https://highlineheaven.pockethost.io/'
+const pb = new PocketBase(url)
 
 export default pb;
+
+
