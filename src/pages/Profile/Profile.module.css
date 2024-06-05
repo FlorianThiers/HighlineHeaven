@@ -1,0 +1,133 @@
+.container {
+  background-image: url('/436657063_811352664295228_659004687699650269_n.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 7.5rem 2rem 7.5rem;
+}
+  
+  .profile {
+    width: 200%;
+    background-color: #6e6e6e;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #ccc 1px solid;
+    padding: 2rem;
+  }
+  
+  .profileImg {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 50%;
+  }
+  
+  .profile h2 {
+    margin: 40px;
+  }
+  
+  
+
+
+  .interests img{
+    width: 150px;
+    margin: 10px;
+    border: #6e6e6e 2px solid;
+  }
+
+  .interest {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+    .interest button {
+        margin-bottom: 2rem;
+    }
+  
+  .seeMore {
+    color: black;
+    background-color: transparent;
+  } 
+  
+  .editProfile {
+    margin: 10px;
+    background-color: #6B8E23;
+  }
+  
+  .changePassword {
+    margin: 10px;
+    background-color: rgb(170, 0, 0);
+  }
+  
+
+
+
+
+
+
+
+
+  .rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 150%;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    background-color: #6e6e6e;
+    border: #ccc 1px solid;
+    color: black;
+    margin: 0 0 0 5%;
+  }
+
+  .favorites, .history {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .favoriteItems, .historyItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+  }
+  
+  @media only screen and (max-width: 1020px) {
+    .container {
+      flex-direction: column;
+    }
+    .profile {
+      width: 100%;
+    }
+    .rightColumn {
+      width: 100%;
+      margin: 5% 0 0 0;
+    }
+  }
+  
+  @media only screen and (max-width: 570px) {
+    .profile {
+      flex-direction: column;
+    }
+    .interests, .favorites, .history {
+      flex-direction: row;
+      margin-right: 0;
+    }
+    .profile h2 {
+      margin-left: 0;
+      margin-top: 0;
+    }
+    .profile img {
+      width: 50px;
+      height: 50px;
+    }
+    .seeMore, .editProfile, .changePassword {
+      margin-top: 0;
+      margin: 10px;
+    }
+  }

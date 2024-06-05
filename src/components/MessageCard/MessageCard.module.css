@@ -1,0 +1,11 @@
+.messageCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    min-width: 285px;
+    background-color: #606060;
+    border-radius: 5%;
+    justify-content: space-between;
+}

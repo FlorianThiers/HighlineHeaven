@@ -1,0 +1,103 @@
+/* OptionMenu.module.css */
+
+.buttonList {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    height: 7.5rem;
+  }
+  
+  .buttonList__item {
+    cursor: pointer;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    transition: background-color 0.3s; /* Add transition for background-color */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttonList__item_image {
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke: #333;
+  }
+  
+  /* Hover effect */
+  .buttonList__item:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000; /* Change the color as needed */
+    border-radius: .5rem;
+    animation: borderAnimation 0.3s ease forwards;
+  }
+  
+  /* Active effect */
+  .buttonList__item.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: .5rem;
+  }
+  
+  
+  /* Click animation */
+  .buttonList__item:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Change the color as needed */
+  }
+  
+  /* Click animation */
+  .buttonList__item:active {
+    background-color: rgba(0, 0, 0, 0.2); /* Change the color as needed */
+  }
+
+  .buttonList img {
+    width: 50%;
+    height: 50%;
+  }
+  
+  @keyframes borderAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+  }
+  
+  /* Different colors for each button */
+  .buttonList__item:nth-child(3).active::after {
+    background-color: rgb(55, 213, 55); /* Change the color as needed */
+  }
+  
+  .buttonList__item:nth-child(2).active::after {
+    background-color: rgb(89, 177, 207); /* Change the color as needed */
+  }
+  
+  .buttonList__item:nth-child(1).active::after {
+    background-color: rgb(247, 150, 71); /* Change the color as needed */
+  }
+  
+  /* Different colors for each button */
+  .buttonList__item:nth-child(3).active .buttonList__item_image {
+    stroke: rgb(55, 213, 55); /* Change the color as needed */
+  }
+  
+  .buttonList__item:nth-child(2).active .buttonList__item_image {
+    stroke: rgb(89, 177, 207); /* Change the color as needed */
+  }
+  
+  .buttonList__item:nth-child(1).active .buttonList__item_image {
+    stroke: rgb(247, 150, 71); /* Change the color as needed */
+  }
+  

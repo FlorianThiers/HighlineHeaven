@@ -1,0 +1,122 @@
+.container {
+  background-image: url('/436657063_811352664295228_659004687699650269_n.jpg');
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.product, .productL {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 20px 0;
+  max-width: 85%;
+}
+
+.productL {
+
+
+}
+
+.productL {
+  flex-direction: row-reverse;
+}
+
+.product img, .productL img {
+  animation: spin 4s linear infinite;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.productInfo, .productInfoR {
+  background: linear-gradient(to right, rgba(110, 110, 110, 1), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 60%;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.productInfoR {
+  background: linear-gradient(to left, rgba(110, 110, 110, 1), transparent);  
+  align-items: flex-end;
+  text-align: right;
+}
+
+button {
+  align-self: flex-end;
+  margin-bottom: 1rem;
+
+}
+
+
+
+.productL button {
+  background-color: #6B8E23;
+  animation: beat 5s linear infinite;
+  animation-delay: 0.5s; /* Voeg deze regel toe */
+}
+
+.product button {
+  align-self: flex-start;
+  background-color: #6B8E23;
+  animation: beat 5s linear infinite;
+
+}
+
+.product button:hover, .productL button:hover {
+  background-color: #5f7d1f;
+  animation: beatFast 0.2s linear infinite;
+}
+
+a {
+  color: black;
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  75% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/*animatie om knoppen te doen kloppen als een hard kloppend hart*/
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  46% {
+    transform: scale(1);
+  }
+  48% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  52% {
+    transform: scale(1.1);
+  }
+  54% {
+    transform: scale(1);
+  }
+}
+
+@keyframes beatFast {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+
+}

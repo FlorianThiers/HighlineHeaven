@@ -1,0 +1,313 @@
+.header {
+    /* Add other styles as needed */
+    background: linear-gradient(to bottom, #404040 , rgba(64, 64, 64, 0.7));     display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: sticky; /* Add this line */
+    top: 0; /* Add this line */
+    z-index: 1000; /* Add this line */
+    
+}
+
+.rowTop {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.2rem;
+    transition: all 0.8s ease-in-out;
+
+}
+
+.rowTop.hidden {
+    display: none;
+    top: -100px;
+  }
+
+.rowTop button {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin: 0.3125rem 1.5625rem 0.3125rem 1.5625rem; /* Add margin */
+    width: 10rem;
+    height: 2rem;
+    padding-top: 0.2rem; /* Verhoog de bovenste padding */
+    padding-bottom: 0.4rem; /* Verlaag de onderste padding */
+    /* Add other button styles as needed */
+}
+
+
+.rowLow {
+    background: linear-gradient(to bottom, #404040 , transparent);     padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row {
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 6rem; /* Add margin */
+    margin-right: 6rem; /* Add margin */
+}
+
+
+.header__logo {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #6B8E23;
+    margin: 10px;
+    text-shadow: 0 0 1px rgba(107, 142, 35, 0.5), 0 0 2px rgba(107, 142, 35, 0.5), 0 0 3px rgba(107, 142, 35, 0.5), 0 0 40px #6B8E23;
+  }
+
+.header__logo:hover {
+    animation: beat 2s infinite;
+    text-shadow: 0 0 1px #5d65fe , 0 0 2px #5d65fe , 0 0 3px #5d65fe , 0 0 4px #5d65fe ;
+  }
+
+.icons button {
+    background-color: #6B8E23;
+    color: black;
+    margin: 10px; /* Add margin */
+    margin-top: 20px;
+    /* Add other button styles as needed */
+}
+
+.icons button {
+    max-width: 5rem;
+}
+
+.bottumRow {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rowBottum button {
+    background-color: transparent;
+    margin: 10px; /* Add margin */
+    /* Add other button styles as needed */
+}
+
+.rowBottum button a{
+    color: white;
+}
+
+
+
+.profile {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem;
+    margin-right: 2rem;
+    /* Add other profile styles as needed */
+}
+
+
+
+.profile button {
+    background-color: rgb(170, 0, 0);
+
+    /* Add other profile image styles as needed */
+}
+
+.rowTop button:hover {
+    background-color: #ddd; /* Change as needed */
+}
+
+.icons button:hover {
+    background-color: #6a8e23d3; /* Change as needed */
+}
+
+.rowBottum button:hover {
+    color: #6B8E23; /* Change as needed */
+}
+
+.rowBottum button a:hover {
+    color: #6B8E23; /* Change as needed */
+}
+
+.profile button:hover {
+    background-color: rgb(135, 0, 0);
+    border-color: #6B8E23; /* Change as needed */
+}
+
+
+/* ********* */
+/* Media */
+/* ********* */
+
+/* For mobile devices */
+@media only screen and (max-width: 805px) {
+    /* Add styles top row */
+    .rowTop {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 0rem; /* Add margin */
+        margin-right: 0rem; /* Add margin */
+        padding: 0rem;
+
+    }
+
+    .rowTop button {
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        margin: 0;
+        width: 6rem;
+        height: 2rem;
+        padding-top: -0.2rem; /* Verhoog de bovenste padding */
+        padding-bottom: 0.4rem; /* Verlaag de onderste padding */
+        /* Add other button styles as needed */
+    }
+
+    /* Add styles low row */
+    .rowLow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__logo {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #6B8E23;
+        margin: 0px;
+        text-shadow: 0 0 1px rgba(107, 142, 35, 0.5), 0 0 2px rgba(107, 142, 35, 0.5), 0 0 3px rgba(107, 142, 35, 0.5), 0 0 40px #6B8E23;
+      }
+
+    .header__logo:hover {
+        animation: beat 2s infinite;
+        text-shadow: 0 0 1px #5d65fe , 0 0 2px #5d65fe , 0 0 3px #5d65fe , 0 0 4px #5d65fe ;
+      }
+
+    
+    /* Add styles bottum row */
+    .bottumRow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .rowBottum {
+        display: flex;
+        }
+
+
+      .profile {
+        position: absolute;
+        display: block;
+        justify-content: center;
+        top: 50%;
+        right: -60.4%;
+        width: 80%;
+    }
+    
+
+
+
+
+
+}
+
+/* For tablet devices */
+@media only screen and (min-width: 805px) and (max-width: 1423px) {
+    /* Add styles top row */
+    .rowTop {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 0rem; /* Add margin */
+        margin-right: 0rem; /* Add margin */
+        padding: 0rem;
+    }
+
+    /* Add styles low row */
+    .rowLow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__logo {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #6B8E23;
+        margin: 0px;
+        text-shadow: 0 0 1px rgba(107, 142, 35, 0.5), 0 0 2px rgba(107, 142, 35, 0.5), 0 0 3px rgba(107, 142, 35, 0.5), 0 0 40px #6B8E23;
+      }
+
+    .header__logo:hover {
+        animation: beat 2s infinite;
+        text-shadow: 0 0 1px #5d65fe , 0 0 2px #5d65fe , 0 0 3px #5d65fe , 0 0 4px #5d65fe ;
+      }
+
+    
+    
+    /* Add styles bottum row */
+    .rowBottum {
+        display: flex;
+      }
+    
+    .bottumRow {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile {
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: -60.4%;
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ********* */
+/* KeyFrames */
+/* ********* */
+
+  @keyframes beat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(1);
+    }
+    45% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1);
+    }
+    55% {
+      transform: scale(1.1);
+    }
+    60% {
+      transform: scale(1);
+    }
+  }

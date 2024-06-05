@@ -1,0 +1,76 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px 50px 50px;
+    justify-content: center;
+
+}
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 2rem;
+    max-width: 87%;
+  }
+  
+  .bottumRow {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rowBottum button {
+    background-color: transparent;
+    margin: 10px; /* Add margin */
+    /* Add other button styles as needed */
+}
+
+.rowBottum button a{
+    color: white;
+}
+
+  
+  @media screen and (max-width: 1070px) {
+    .productGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .productGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* For mobile devices */
+@media only screen and (max-width: 895px) {
+    /* Add styles top row */
+    
+    
+    /* Add styles bottum row */
+    .bottumRow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .rowBottum {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      
+    }
+
+}
+
+/* For tablet devices */
+@media only screen and (min-width: 895px) and (max-width: 1423px) {
+
+    /* Add styles bottum row */
+    .bottumRow {
+        flex-direction: column;
+        align-items: center;
+    }
+}
