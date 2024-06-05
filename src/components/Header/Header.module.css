@@ -135,8 +135,27 @@
 /* Media */
 /* ********* */
 
+
+@media only screen and (max-width: 400px) {
+
+    .icons {
+        width: 50%;
+    }
+
+    .profile {
+        position: absolute;
+        display: block;
+        justify-content: center;
+        top: 150%;
+        right: -60.4%;
+        width: 80%;
+    }
+}
+
+
+
 /* For mobile devices */
-@media only screen and (max-width: 805px) {
+@media only screen and (min-width: 400px) and (max-width: 805px) {
     /* Add styles top row */
     .rowTop {
         display: flex;
