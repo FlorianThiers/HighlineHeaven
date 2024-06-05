@@ -44,7 +44,8 @@ const Category = () => {
       <div className={style.bottumRow}>
         {/* styles */}
         <div className={style.rowBottum}>
-          <Link to={`${ROUTES.category.to}${"0udaymb6jqtpncj"}`}>
+          <Link to={`${ROUTES.category.to}${"0udaymb6jqtpncj"}`}
+            activeClassName="active-link">
             <button>HighLines</button>
           </Link>
           <Link to={`${ROUTES.category.to}${"01d75a71zc4d59v"}`}>
