@@ -26,6 +26,10 @@
     /* Add other button styles as needed */
 }
 
+.active-link {
+    border-color: aliceblue;
+}
+
 .rowBottum button a{
     color: white;
 }
