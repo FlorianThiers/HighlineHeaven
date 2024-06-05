@@ -136,7 +136,7 @@
 /* ********* */
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
     .icons {
         width: 50%;
@@ -155,7 +155,7 @@
 
 
 /* For mobile devices */
-@media only screen and (min-width: 400px) and (max-width: 805px) {
+@media only screen and (min-width: 500px) and (max-width: 805px) {
     /* Add styles top row */
     .rowTop {
         display: flex;
